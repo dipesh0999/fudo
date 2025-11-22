@@ -1,4 +1,20 @@
 @import "tailwindcss";
 
 @theme{
+    --color-dg: #656564;
+    --color-black50: rgba(0,0,0,.5);
+    --color-primary: #F44749;
+    --color-primaryL: #FFF2F3;
+    --color-primaryF4: #FFF4F4;
+    --color-primaryEC: #FCEDEC;
+    --color-fafafb: #FAFAFB;
+    --color-F0F1F0: #FAFAFB;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.font-pf{
+    font-family: "Playfair Display", serif;
 }

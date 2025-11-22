@@ -2,13 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Finsweet Tailwind</title>
+    <title>Fudo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="w-[100vw] h-[100vh] bg-linear-to-b from-[#FFF2F3] to-[#fff]"></div>
+    <div class="w-[100%] bg-linear-to-b from-[#FFF2F3] to-[#fff] pt-[3.125vw] px-[9.375vw] pb-[10.417vw]">
+      <header class="flex justify-between items-center">
+        <a href="" class="">
+          <img src="assets/images/logo.png" alt="" class="w-[6.51vw]" width="186" height="58" />
+        </a>
+        <ul class="flex items-center gap-[2.604vw] ml-[2.604vw]">
+          <li class=""><a href="" class="text-dg font-bold text-[1.146vw] hover:text-primary duration-300 ease-in">Home</a></li>
+          <li class=""><a href="" class="text-dg font-bold text-[1.146vw] hover:text-primary duration-300 ease-in">Review</a></li>
+          <li class=""><a href="" class="text-dg font-bold text-[1.146vw] hover:text-primary duration-300 ease-in">About Us</a></li>
+          <li class=""><a href="" class="text-dg font-bold text-[1.146vw] hover:text-primary duration-300 ease-in">Contact Us</a></li>
+        </ul>
+        <div class="">
+          <ul class="flex items-center gap-[1.302vw]">
+            <li class=""><a href="" class="text-primary border-[1px] border-primary rounded-[0.521vw] font-medium text-[1.146vw] py-[0.521vw] px-[1.042vw] relative before:border-[2px] before:border-primaryF3 before:w-[100%] before:h-[100%] before:absolute before:left-0 before:top-0 before:rounded-[0.521vw] hover:before:bg-primary before:duration-300 before:ease-in group"><span class="relative z-1 group-hover:text-primaryF3 duration-300 ease-in ">Sign In</span></a></li>
+            <li class=""><a href="" class="text-primary border-[1px] border-primary rounded-[0.521vw] font-medium text-[1.146vw] py-[0.521vw] px-[1.042vw] relative before:border-[2px] before:border-primaryF3 before:w-[100%] before:h-[100%] before:absolute before:left-0 before:top-0 before:rounded-[0.521vw] hover:before:bg-primary before:duration-300 before:ease-in group"><span class="relative z-1 group-hover:text-primaryF3 duration-300 ease-in ">Sign Up</span></a></li>
+          </ul>
+        </div>
+        <!-- <div class=""></div> -->
+      </header>
+
+      <section class="flex justify-between items-start pt-[7.813vw]">
+        <div class="w-[33.333vw]">
+
+          <div class="bg-primaryEC text-primary py-[0.521vw] px-[0.781vw] text-[0.833vw] rounded-[0.521vw] font-bold inline-flex items-center gap-[0.521vw]">
+            <span>Quality Food</span>
+            <img src="assets/images/icons/hot_dog.png" alt="" class="w-[1.042vw]" width="64" height="64" />
+          </div>
+
+          <h1 class="text-[5.208vw] font-pf leading-[1.1] font-black">
+            Fastest <span class="text-primary">Delivery</span> & Easy <span class="text-primary">Pickup</span>
+          </h1>
+
+          <p class="text-[1.146vw] text-black50 my-[3.125vw]">Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes</p>
+
+          <form action="" class="flex items-center">
+            <div class="border-[2px] border-primary py-[1.563vw] pl-[1.042vw] pr-[3.906vw] rounded-tl-[1.563vw] rounded-bl-[1.563vw] relative w-full">
+              <input type="text" name="" id="" placeholder="Enter your delivery location" class="w-full outline-0 text-[1.042vw] text-black50" required />
+              <img src="assets/images/icons/gps_icon.png" alt="" class="w-[2.083vw] right-[1.302vw] absolute top-[50%] -translate-y-[50%]" width="128" height="128" />
+            </div>
+            <button type="submit" class="bg-primary border-[2px] border-l-0 border-primary rounded-tr-[1.563vw] rounded-br-[1.563vw] cursor-pointer py-[1.615vw] px-[2.344vw] text-[1.042vw] flex items-center gap-[0.781vw] text-white hover:bg-primaryEC hover:text-primary duration-300 ease-in group">
+              <span>Discover</span>
+              <img src="assets/images/icons/right.png" alt="" class="w-[1.302vw] invert-[1] brightness-[0] group-hover:invert-[0] group-hover:brightness-[auto] duration-300 ease-in" width="64" height="64" />
+            </button>
+          </form>
+          
+          <div class="bg-fafafb py-[1.563vw] pl-[1.042vw] pr-[2.344vw] rounded-[1.042vw] inline-flex gap-[0.781vw] items-start mt-[2.344vw]">
+            <div class="border-[0.26vw] border-white rounded-[0.521vw] bg-F0F1F0 overflow-hidden">
+              <img src="assets/images/profile/pic_1.png" alt="" class="w-[5.729vw] rounded-[0.521vw] scale-[1.2]" width="4096" height="4096" />
+            </div>
+            <div class="">
+              <div class="text-[#2F2E2F] text-[1.25vw] font-bold mb-[0.521vw]">Our Happy Customers</div>
+              <div class="text-primary text-[1.042vw] font-bold mb-[0.26vw]">Best Food Delivery Platform</div>
+              <div class="text-[#2F2E2F] text-[0.938vw] font-bold">+12.5k Review</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[41.719vw] relative">
+          <img src="assets/images/lady_banner.png" alt="" class="w-full" width="801" height="930" />
+          <div class="absolute bg-white flex items-center gap-[1.302vw] bottom-0 -right-[1.042vw] py-[1.042vw] px-[1.302vw] rounded-[1.042vw]">
+            <img src="assets/images/small_pizza.png" alt="" class="w-[6.51vw] rounded-[1.042vw]" width="200" height="200" />
+            <div class="">
+              <div class="font-medium text-[1.146vw]">Italian Pizza</div>
+              <div class="flex gap-[0.521vw] mt-[0.781vw] mb-[1.042vw]">
+                <img src="assets/images/icons/star.png" alt="" class="w-[1.042vw]" width="64" height="64" />
+                <img src="assets/images/icons/star.png" alt="" class="w-[1.042vw]" width="64" height="64" />
+                <img src="assets/images/icons/star.png" alt="" class="w-[1.042vw]" width="64" height="64" />
+                <img src="assets/images/icons/star.png" alt="" class="w-[1.042vw]" width="64" height="64" />
+                <img src="assets/images/icons/star-stroke.png" alt="" class="w-[1.042vw]" width="64" height="64" />
+              </div>
+              <div class="text-[1.042vw] text-[#343434] font-medium"><span class="text-[0.833vw] text-primary">$</span>9.50</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
   </body>
 </html>
