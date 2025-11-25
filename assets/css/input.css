@@ -1,14 +1,20 @@
 @import "tailwindcss";
 
+
 @theme{
     --color-dg: #656564;
     --color-black50: rgba(0,0,0,.5);
+    --color-black60: rgba(0,0,0,.6);
+    --color-white50: rgba(255,255,255,.5);
     --color-primary: #F44749;
     --color-primaryL: #FFF2F3;
-    --color-primaryF4: #FFF4F4;
+    --color-primaryEL: #FFF4F4;
     --color-primaryEC: #FCEDEC;
     --color-fafafb: #FAFAFB;
     --color-F0F1F0: #FAFAFB;
+    --color-yellow: #FDC45E;
+    --color-gray: #2F2E2F;
+    --color-green: #12C65A;
 }
 
 body{
@@ -17,4 +23,86 @@ body{
 
 .font-pf{
     font-family: "Playfair Display", serif;
+}
+
+.txtLine, .txtLineReverse{
+    position: relative;
+    padding-bottom: 1px;
+    transition: all .3s ease-in;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform .3s ease-in;
+    }
+    &:hover{
+        &::before{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+}
+
+.txtLineReverse{
+    &::before{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    &:hover{
+        &::before{
+            transform: scaleX(0);
+            transform-origin: bottom right;
+        }
+    }
+}
+
+
+.swiper-slide-active .my-rotate {
+    animation: rotateIt 5s linear forwards;
+}
+
+
+@keyframes rotateIt {    
+    0%   { transform: rotate(0deg); }
+    
+    20%  { transform: rotate(180deg); }
+    
+    21%  { transform: rotate(180deg); }
+    80%  { transform: rotate(180deg); }
+    
+    100% { transform: rotate(360deg); }
+}
+  
+
+
+
+.heart-btn{
+    &.active{
+        .red-heart{
+            animation: heart_beat .5s ease-in both;
+        }
+    }
+}
+
+@keyframes heart_beat {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
