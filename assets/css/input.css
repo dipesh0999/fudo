@@ -109,7 +109,30 @@ body{
 
 
 
+#hamburger.active span:nth-child(1) {
+    transform: translateY(2.5vw) rotate(45deg);
+    background: #F44749;
+}
 
+#hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger.active span:nth-child(3) {
+  transform: translateY(-1.932vw) rotate(-45deg);
+  background: #F44749;
+}
+
+
+@media screen and (max-width: 540px) {
+    .navigation.active{
+        left: 0;
+    }
+    .overlay.active{
+        opacity: 1;
+        z-index: 9;
+    }
+}
 
 /* custom animation */
 

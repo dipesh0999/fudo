@@ -37,22 +37,6 @@ const contentSwiper = new Swiper(".contentSwiper", {
     },
 });
 
-// const testSwiper = new Swiper(".testSwiper", {
-//     speed: 1000,
-//     loop: true,
-//     effect: "cube",
-//       grabCursor: true,
-//       cubeEffect: {
-//         shadow: false,
-//         slideShadows: false,
-//         shadowOffset: 20,
-//         shadowScale: 0.94,
-//       },
-//     navigation: {
-//         nextEl: ".test-next",
-//         prevEl: ".test-prev",
-//     },
-// });
 
 const testSwiper = new Swiper(".testSwiper", {
     loop: true,
@@ -78,8 +62,30 @@ const testSwiper = new Swiper(".testSwiper", {
 });
   
 
-const heartBtn = document.querySelector(".heart-btn");
 
-heartBtn.addEventListener("click", function () {
-  this.classList.toggle("active");
-});
+document.querySelectorAll(".heart-btn").forEach(heartBtn => {
+    heartBtn.addEventListener("click", () => {
+      heartBtn.classList.toggle("active");
+    });
+  });
+  
+
+
+
+
+const menuBtn = document.getElementById("hamburger");
+const menu = document.querySelector(".navigation");
+const overlay = document.querySelector(".overlay");
+
+overlay.onclick = () => {
+    menuBtn.classList.remove("active");
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
+}
+
+menuBtn.onclick = () => {
+    menuBtn.classList.toggle("active");
+    menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+};
+
