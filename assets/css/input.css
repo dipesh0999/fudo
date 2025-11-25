@@ -106,3 +106,14 @@ body{
         opacity: 1;
     }
 }
+
+
+
+
+
+/* custom animation */
+
+
+.animate__medium {
+    --animate-duration: 1.3s;
+  }
